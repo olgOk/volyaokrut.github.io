@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Under Construction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,11 +14,28 @@
             background-color: #f3f3f3;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: flex-start;
             height: 100vh;
         }
 
-        .container {
+        .sidebar {
+            background-color: #111;
+            width: 25%;
+            height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main-content {
+            width: 75%;
+            height: 100%;
+            padding: 20px;
+            box-sizing: border-box;
             text-align: center;
         }
 
@@ -50,11 +68,63 @@
                 transform: rotate(360deg);
             }
         }
+
+        .footer-icons {
+            margin-top: auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer-icons a {
+            color: #fff;
+            font-size: 24px;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .sidebar-buttons {
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sidebar-buttons button {
+            background-color: #093009;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        .sidebar-buttons button:hover {
+            background-color: #327435;
+            color: white;
+        }
     </style>
 </head>
 
 <body>
-    <div class="container">
+    <div class="sidebar">
+        <div class="sidebar-buttons">
+            <button>About Me</button>
+            <button>CV</button>
+            <button>Resume</button>
+        </div>
+        <div class="footer-icons">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-medium"></i></a>
+        </div>
+    </div>
+    <div class="main-content">
         <h1>Under Construction</h1>
         <div class="loader"></div>
         <p>I'm working on something awesome! Please check back later.</p>
