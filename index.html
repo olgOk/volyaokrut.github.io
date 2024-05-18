@@ -108,11 +108,29 @@
             background-color: #327435;
             color: white;
         }
+
+        #profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 50px;
+            overflow: hidden;
+            border: 1px solid #093009; /* Adjust border as needed */
+        }
+
+        #profile-picture img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     </style>
 </head>
 
 <body>
     <div class="sidebar">
+        <div id="profile-picture">
+            <img src="" alt="">
+        </div>
         <div class="sidebar-buttons">
             <button>About Me</button>
             <button>CV</button>
